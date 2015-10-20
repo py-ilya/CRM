@@ -24,3 +24,6 @@ C:\Users\i.belonogov\documents\visual studio 2015\Projects\CRM\CRM\bin\Debug\CRM
 C:\Users\i.belonogov\documents\visual studio 2015\Projects\CRM\CRM\obj\Debug\CRM.exe.manifest
 C:\Users\i.belonogov\documents\visual studio 2015\Projects\CRM\CRM\obj\Debug\CRM.application
 C:\Users\i.belonogov\documents\visual studio 2015\Projects\CRM\CRM\obj\Debug\CRM.csprojResolveAssemblyReference.cache
+C:\Users\i.belonogov\Documents\GitHub\bin\Debug\CRM.exe.config
+C:\Users\i.belonogov\Documents\GitHub\obj\Debug\CRM.exe
+C:\Users\i.belonogov\Documents\GitHub\obj\Debug\CRM.pdb

@@ -14,5 +14,5 @@
     </Page.Resources>
     
 
-    <Grid Background="White"/>
+    <Grid Background="#FFE2E2E2"/>
 </Page>
