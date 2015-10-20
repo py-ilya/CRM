@@ -1,0 +1,71 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CRM"
+        xmlns:Properties="clr-namespace:CRM.Properties" x:Class="CRM.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="570.8" Width="473" WindowStartupLocation="CenterScreen" WindowState="Maximized" Background="White" Loaded="Window_Loaded">
+    <Window.Resources>
+        <Style x:Key="requiredFieldValidationStyleComboBox">
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=SelectedItem.Content}" Value="{x:Null}">
+                    <Setter Property="ComboBox.BorderBrush" Value="Red" />
+                    <Setter Property="ComboBox.ToolTip" Value="Input value is mandatory" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Frame x:Name="frame" Content="" NavigationUIVisibility="Hidden" Margin="184,0,0,0"/>
+        <Grid Background="#FF4D5874" HorizontalAlignment="Left" Width="184">
+            <DockPanel HorizontalAlignment="Left" LastChildFill="False" VerticalAlignment="Top" Width="184">
+                <Image x:Name="btnHome" Height="48" VerticalAlignment="Top" Width="48" Source="Images/Home.png" Stretch="Uniform" HorizontalAlignment="Left" Cursor="Hand" MouseLeftButtonUp="btnHome_MouseLeftButtonUp"/>
+                <Image x:Name="btnMenu" Height="48" Source="Images/menu.png" VerticalAlignment="Top" Margin="20,0,0,0" HorizontalAlignment="Left" Cursor="Hand"/>
+                <Image x:Name="btnResize" Height="48" VerticalAlignment="Top" Width="48" Source="Images/left.png" HorizontalAlignment="Right" Cursor="Hand" DockPanel.Dock="Right"/>
+            </DockPanel>
+            <ComboBox x:Name="comboBox" Margin="16,53,16,0" Width="152" BorderThickness="0" IsReadOnly="True" HorizontalAlignment="Center" Height="37" VerticalAlignment="Top"/>
+            <Border BorderBrush="#FFF49D57" BorderThickness="0,0.6" Height="46" Margin="16,48,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="152"/>
+            <StackPanel HorizontalAlignment="Left" Height="446" Margin="0,94,0,0" VerticalAlignment="Top" Width="184">
+                <DockPanel x:Name="docContractors" HorizontalAlignment="Left" Height="48" LastChildFill="False" VerticalAlignment="Top" Width="184" Cursor="Hand" MouseMove="docContractors_MouseMove" MouseLeave="docContractors_MouseLeave" Background="#FF4D5874" MouseUp="docContractors_MouseUp">
+                    <Image x:Name="image_Copy2" Height="48" VerticalAlignment="Top" Width="48" Source="Images/rifle.png" HorizontalAlignment="Left" Cursor="Hand"/>
+                    <Label x:Name="label" Content="Contractors" Margin="5,0,0,0" Height="48" Foreground="White" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="129 "/>
+                </DockPanel>
+                <DockPanel x:Name="docCompanies" HorizontalAlignment="Left" Height="48" LastChildFill="False" VerticalAlignment="Top" Width="184" Cursor="Hand" MouseMove="docCompanies_MouseMove" MouseLeave="docCompanies_MouseLeave">
+                    <Image x:Name="image_Copy3" Height="48" VerticalAlignment="Top" Width="48" Source="Images/navigator.png" HorizontalAlignment="Left" Cursor="Hand"/>
+                    <Label x:Name="label1" Content="Companies" Margin="5,0,0,0" Height="48" Foreground="White" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="129"/>
+                </DockPanel>
+                <DockPanel x:Name="docAgreements" HorizontalAlignment="Left" Height="48" LastChildFill="False" VerticalAlignment="Top" Width="184" Cursor="Hand" MouseMove="docAgreements_MouseMove" MouseLeave="docAgreements_MouseLeave">
+                    <Image x:Name="image_Copy4" Height="48" VerticalAlignment="Top" Width="48" Source="Images/shoe.png" HorizontalAlignment="Left" Cursor="Hand"/>
+                    <Label x:Name="label2" Content="Agreements" Margin="5,0,0,0" Height="48" Foreground="White" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="129"/>
+                </DockPanel>
+                <DockPanel x:Name="docActs" HorizontalAlignment="Left" Height="48" LastChildFill="False" VerticalAlignment="Top" Width="184" Cursor="Hand" MouseMove="docActs_MouseMove" MouseLeave="docActs_MouseLeave">
+                    <Image x:Name="image_Copy5" Height="48" VerticalAlignment="Top" Width="48" Source="Images/toilet-paper.png" HorizontalAlignment="Left" Cursor="Hand"/>
+                    <Label x:Name="label3" Content="Acts" Margin="5,0,0,0" Height="48" Foreground="White" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="129"/>
+                </DockPanel>
+                <DockPanel x:Name="docInvoices" HorizontalAlignment="Left" Height="48" LastChildFill="False" VerticalAlignment="Top" Width="184" Cursor="Hand" MouseMove="docInvoices_MouseMove" MouseLeave="docInvoices_MouseLeave">
+                    <Image x:Name="image_Copy6" Height="48" VerticalAlignment="Top" Width="48" Source="Images/tool.png" HorizontalAlignment="Left" Cursor="Hand"/>
+                    <Label x:Name="label4" Content="Invoices" Margin="5,0,0,0" Height="48" Foreground="White" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="129"/>
+                </DockPanel>
+                <DockPanel x:Name="docStatus" HorizontalAlignment="Left" Height="48" LastChildFill="False" VerticalAlignment="Top" Width="184" Cursor="Hand" MouseMove="docStatus_MouseMove" MouseLeave="docStatus_MouseLeave">
+                    <Image x:Name="image_Copy7" Height="48" VerticalAlignment="Top" Width="48" Source="Images/zippo.png" HorizontalAlignment="Left" Cursor="Hand"/>
+                    <Label x:Name="label5" Content="Status" Margin="5,0,0,0" Height="48" Foreground="White" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="129"/>
+                </DockPanel>
+                <DockPanel x:Name="docOthers1" HorizontalAlignment="Left" Height="48" LastChildFill="False" VerticalAlignment="Top" Width="184" Cursor="Hand" MouseMove="docOthers1_MouseMove" MouseLeave="docOthers1_MouseLeave">
+                    <Image x:Name="image_Copy8" Height="48" VerticalAlignment="Top" Width="48" Source="Images/fire.png" HorizontalAlignment="Left" Cursor="Hand"/>
+                    <Label x:Name="label6" Content="Others" Margin="5,0,0,0" Height="48" Foreground="White" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="129"/>
+                </DockPanel>
+                <DockPanel x:Name="docOthers2" HorizontalAlignment="Left" Height="48" LastChildFill="False" VerticalAlignment="Top" Width="184" Cursor="Hand" MouseMove="docOthers2_MouseMove" MouseLeave="docOthers2_MouseLeave">
+                    <Image x:Name="image_Copy9" Height="48" VerticalAlignment="Top" Width="48" Source="Images/contacts.png" HorizontalAlignment="Left" Cursor="Hand"/>
+                    <Label x:Name="label7" Content="Others" Margin="5,0,0,0" Height="48" Foreground="White" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="129"/>
+                </DockPanel>
+                <DockPanel x:Name="docOthers3" HorizontalAlignment="Left" Height="48" LastChildFill="False" VerticalAlignment="Top" Width="184" Cursor="Hand" MouseMove="docOthers3_MouseMove" MouseLeave="docOthers3_MouseLeave">
+                    <Image x:Name="image_Copy10" Height="48" VerticalAlignment="Top" Width="48" Source="Images/meat.png" HorizontalAlignment="Left" Cursor="Hand"/>
+                    <Label x:Name="label8" Content="Others" Margin="5,0,0,0" Height="48" Foreground="White" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="129"/>
+                </DockPanel>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Window>
