@@ -74,7 +74,7 @@
         <Label x:Name="label1_Copy" Content="Name" HorizontalAlignment="Left" Margin="324,161,0,0" VerticalAlignment="Top" Foreground="#FFBCB7B1"/>
         <TextBox x:Name="txtName" Text="{Binding name}" HorizontalAlignment="Left" Height="23" Margin="387,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
         <Label x:Name="label1_Copy1" Content="Form" HorizontalAlignment="Left" Margin="611,132,0,0" VerticalAlignment="Top" Foreground="#FFBCB7B1" RenderTransformOrigin="1.119,2"/>
-        <TextBox x:Name="txtForm" HorizontalAlignment="Left" Height="23" Margin="653,135,-31,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
+        <TextBox x:Name="txtForm" Height="23" Margin="653,135,28,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
         <TabControl x:Name="tabControl" Margin="290,192,0,0" BorderThickness="0,1,0,0" BorderBrush="#FFE3E3E3">
             <TabItem Header="Info" BorderBrush="White" Foreground="#FF4974D5">
                 <TabItem.Background>
@@ -89,19 +89,19 @@
                     <Label x:Name="label1_Copy3" Content="EDRPOU" HorizontalAlignment="Left" Margin="31,39,0,0" VerticalAlignment="Top" Foreground="#FFBCB7B1"/>
                     <TextBox x:Name="txtEDRPOU" HorizontalAlignment="Left" Height="23" Margin="94,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
                     <Label x:Name="label1_Copy5" Content="Manger" HorizontalAlignment="Left" Margin="301,10,0,0" VerticalAlignment="Top" Foreground="#FFBCB7B1"/>
-                    <TextBox x:Name="txtManager" HorizontalAlignment="Left" Height="23" Margin="364,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
+                    <TextBox x:Name="txtManager" Height="23" Margin="364,12,23,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
                     <Label x:Name="label1_Copy6" Content="Position" HorizontalAlignment="Left" Margin="301,39,0,0" VerticalAlignment="Top" Foreground="#FFBCB7B1"/>
-                    <TextBox x:Name="txtPosition" HorizontalAlignment="Left" Height="23" Margin="364,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
-                    <Expander x:Name="expander" Header="Expander" Margin="31,129,23,168" Foreground="#FF4974D5">
+                    <TextBox x:Name="txtPosition" Height="23" Margin="364,41,23,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
+                    <Expander x:Name="expander" Header="Additional" Margin="31,129,23,168" Foreground="#FF4974D5">
                         <Grid Background="White">
                             <Label x:Name="label1_Copy7" Content="Xpenb" HorizontalAlignment="Left" Margin="31,10,0,0" VerticalAlignment="Top" Foreground="#FFBCB7B1"></Label>
                             <TextBox x:Name="textBox_Copy7" HorizontalAlignment="Left" Height="23" Margin="94,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555" ClipToBounds="True"/>
                         </Grid>
                     </Expander>
                     <Label x:Name="label1_Copy4" Content="Manger" HorizontalAlignment="Left" Margin="301,67,0,0" VerticalAlignment="Top" Foreground="#FFBCB7B1"/>
-                    <TextBox x:Name="txtManager2" HorizontalAlignment="Left" Height="23" Margin="364,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
+                    <TextBox x:Name="txtManager2" Height="23" Margin="364,69,23,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
                     <Label x:Name="label1_Copy17" Content="Position" HorizontalAlignment="Left" Margin="301,98,0,0" VerticalAlignment="Top" Foreground="#FFBCB7B1"/>
-                    <TextBox x:Name="txtPosition2" HorizontalAlignment="Left" Height="23" Margin="364,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
+                    <TextBox x:Name="txtPosition2" Height="23" Margin="364,100,23,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Contacts" BorderBrush="White" Foreground="#FF4974D5">
@@ -127,23 +127,23 @@
                 </TabItem.Background>
                 <Grid Background="White">
                     <Label x:Name="label1_Copy8" Content="Resident" HorizontalAlignment="Left" Margin="31,10,0,0" VerticalAlignment="Top" Foreground="#FFBCB7B1"/>
-                    <TextBox x:Name="txtResident" HorizontalAlignment="Left" Height="23" Margin="94,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="464" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
+                    <TextBox x:Name="txtResident" Height="23" Margin="94,12,10,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
                     <Label x:Name="label1_Copy9" Content="Another" HorizontalAlignment="Left" Margin="31,38,0,0" VerticalAlignment="Top" Foreground="#FFBCB7B1"/>
-                    <TextBox x:Name="txtAnother" HorizontalAlignment="Left" Height="23" Margin="94,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="464" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
+                    <TextBox x:Name="txtAnother" Height="23" Margin="94,40,10,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
                     <Label x:Name="label1_Copy10" Content="Legal Adress" HorizontalAlignment="Left" Margin="31,66,0,0" VerticalAlignment="Top" Foreground="#FFBCB7B1"/>
-                    <TextBox x:Name="txtLegalAdress" HorizontalAlignment="Left" Height="23" Margin="94,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="464" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
+                    <TextBox x:Name="txtLegalAdress" Height="23" Margin="94,68,10,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
                     <Label x:Name="label1_Copy11" Content="Phisical Adress" HorizontalAlignment="Left" Margin="31,95,0,0" VerticalAlignment="Top" Foreground="#FFBCB7B1"/>
-                    <TextBox x:Name="txtPhisicalAdress" HorizontalAlignment="Left" Height="23" Margin="94,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="464" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
+                    <TextBox x:Name="txtPhisicalAdress" Height="23" Margin="94,97,10,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
                     <Label x:Name="label1_Copy12" Content="Bank" HorizontalAlignment="Left" Margin="31,124,0,0" VerticalAlignment="Top" Foreground="#FFBCB7B1"/>
-                    <TextBox x:Name="txtBankRequisits" HorizontalAlignment="Left" Height="23" Margin="94,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="464" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
+                    <TextBox x:Name="txtBankRequisits" Height="23" Margin="94,126,10,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
                     <Label x:Name="label1_Copy13" Content="Bank Code" HorizontalAlignment="Left" Margin="31,152,0,0" VerticalAlignment="Top" Foreground="#FFBCB7B1"/>
-                    <TextBox x:Name="txtBankCode" HorizontalAlignment="Left" Height="23" Margin="94,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="464" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
+                    <TextBox x:Name="txtBankCode" Height="23" Margin="94,154,10,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
                     <Label x:Name="label1_Copy14" Content="Other" HorizontalAlignment="Left" Margin="31,181,0,0" VerticalAlignment="Top" Foreground="#FFBCB7B1"/>
-                    <TextBox x:Name="txtOther1" HorizontalAlignment="Left" Height="23" Margin="94,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="464" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
+                    <TextBox x:Name="txtOther1" Height="23" Margin="94,183,10,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
                     <Label x:Name="label1_Copy15" Content="Other" HorizontalAlignment="Left" Margin="31,210,0,0" VerticalAlignment="Top" Foreground="#FFBCB7B1"/>
-                    <TextBox x:Name="txtOther2" HorizontalAlignment="Left" Height="23" Margin="94,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="464" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
+                    <TextBox x:Name="txtOther2" Height="23" Margin="94,212,10,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
                     <Label x:Name="label1_Copy16" Content="Other" HorizontalAlignment="Left" Margin="31,239,0,0" VerticalAlignment="Top" Foreground="#FFBCB7B1"/>
-                    <TextBox x:Name="txtOther3" HorizontalAlignment="Left" Height="23" Margin="94,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="464" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
+                    <TextBox x:Name="txtOther3" Height="23" Margin="94,241,10,0" TextWrapping="Wrap" VerticalAlignment="Top" BorderBrush="#FFE3E3E3" BorderThickness="0,0,0,1" Foreground="#FF555555"/>
 
                 </Grid>
             </TabItem>
