@@ -133,5 +133,10 @@ namespace CRM
         {
             docOthers3.Background = null;
         }
+
+        private void docCompanies_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            frame.NavigationService.Navigate(new PageCompanies());
+        }
     }
 }

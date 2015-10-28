@@ -32,7 +32,7 @@
                     <Image x:Name="image_Copy2" Height="48" VerticalAlignment="Top" Width="48" Source="Images/rifle.png" HorizontalAlignment="Left" Cursor="Hand"/>
                     <Label x:Name="label" Content="Contractors" Margin="5,0,0,0" Height="48" Foreground="White" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="129 "/>
                 </DockPanel>
-                <DockPanel x:Name="docCompanies" HorizontalAlignment="Left" Height="48" LastChildFill="False" VerticalAlignment="Top" Width="184" Cursor="Hand" MouseMove="docCompanies_MouseMove" MouseLeave="docCompanies_MouseLeave">
+                <DockPanel x:Name="docCompanies" HorizontalAlignment="Left" Height="48" LastChildFill="False" VerticalAlignment="Top" Width="184" Cursor="Hand" MouseMove="docCompanies_MouseMove" MouseLeave="docCompanies_MouseLeave" MouseUp="docCompanies_MouseUp">
                     <Image x:Name="image_Copy3" Height="48" VerticalAlignment="Top" Width="48" Source="Images/navigator.png" HorizontalAlignment="Left" Cursor="Hand"/>
                     <Label x:Name="label1" Content="Companies" Margin="5,0,0,0" Height="48" Foreground="White" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="129"/>
                 </DockPanel>
