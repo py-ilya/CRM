@@ -36,11 +36,11 @@
                     <Image x:Name="image_Copy3" Height="48" VerticalAlignment="Top" Width="48" Source="Images/navigator.png" HorizontalAlignment="Left" Cursor="Hand"/>
                     <Label x:Name="label1" Content="Companies" Margin="5,0,0,0" Height="48" Foreground="White" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="129"/>
                 </DockPanel>
-                <DockPanel x:Name="docAgreements" HorizontalAlignment="Left" Height="48" LastChildFill="False" VerticalAlignment="Top" Width="184" Cursor="Hand" MouseMove="docAgreements_MouseMove" MouseLeave="docAgreements_MouseLeave">
+                <DockPanel x:Name="docAgreements" HorizontalAlignment="Left" Height="48" LastChildFill="False" VerticalAlignment="Top" Width="184" Cursor="Hand" MouseMove="docAgreements_MouseMove" MouseLeave="docAgreements_MouseLeave" MouseUp="docAgreements_MouseUp">
                     <Image x:Name="image_Copy4" Height="48" VerticalAlignment="Top" Width="48" Source="Images/shoe.png" HorizontalAlignment="Left" Cursor="Hand"/>
                     <Label x:Name="label2" Content="Agreements" Margin="5,0,0,0" Height="48" Foreground="White" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="129"/>
                 </DockPanel>
-                <DockPanel x:Name="docActs" HorizontalAlignment="Left" Height="48" LastChildFill="False" VerticalAlignment="Top" Width="184" Cursor="Hand" MouseMove="docActs_MouseMove" MouseLeave="docActs_MouseLeave">
+                <DockPanel x:Name="docActs" HorizontalAlignment="Left" Height="48" LastChildFill="False" VerticalAlignment="Top" Width="184" Cursor="Hand" MouseMove="docActs_MouseMove" MouseLeave="docActs_MouseLeave" MouseUp="docActs_MouseUp">
                     <Image x:Name="image_Copy5" Height="48" VerticalAlignment="Top" Width="48" Source="Images/toilet-paper.png" HorizontalAlignment="Left" Cursor="Hand"/>
                     <Label x:Name="label3" Content="Acts" Margin="5,0,0,0" Height="48" Foreground="White" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="129"/>
                 </DockPanel>

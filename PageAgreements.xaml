@@ -1,12 +1,12 @@
-﻿<Page x:Class="CRM.Page1"
+﻿<Page x:Class="CRM.PageAgreements"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:CRM"
       mc:Ignorable="d" 
-      d:DesignHeight="582.637"
-      Title="PageContractors" d:DesignWidth="862">
+      d:DesignHeight="582.637" d:DesignWidth="862"
+      Title="PageAgreements">
     <Page.Resources>
         <local:dbERPDataSet x:Key="dbERPDataSet"/>
         <CollectionViewSource x:Key="tbContractorViewSource" Source="{Binding tbContractor, Source={StaticResource dbERPDataSet}}"/>
@@ -51,14 +51,12 @@
 
 
     </Page.Resources>
-
-
-    <Grid Loaded="Grid_Loaded" Background="White">
-        <ListBox x:Name="listBox1" Width="290" ItemsSource="{Binding Tables[0]}" ItemTemplate="{StaticResource listBoxTemplate}" Background="White" HorizontalAlignment="Left" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden" BorderBrush="#FFE3E3E3" Margin="0,130,0,0" BorderThickness="0,0,1,0" MouseLeftButtonUp="listBox1_MouseLeftButtonUp"/>
-        <Label x:Name="label" Content="Contractors" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="172" Foreground="#FF444167" FontSize="32" />
-        <Button x:Name="button" Content="New" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="79" Background="#FF64B8DF" BorderBrush="#FF64B8DF" Height="29" Foreground="White" Click="button_Click" TabIndex="1"/>
-        <Button x:Name="button_Copy" Content="Update" HorizontalAlignment="Left" Margin="309,68,0,0" VerticalAlignment="Top" Width="46" BorderBrush="#FFF0F0F0" Height="29" Foreground="#FF4B4B4B" Background="#FFF0F0F0" Click="button_Copy_Click" TabIndex="2"/>
-        <Button x:Name="button_Copy1" Content="Save" HorizontalAlignment="Left" Margin="363,68,0,0" VerticalAlignment="Top" Width="46" Background="#FFF0F0F0" BorderBrush="#FFF0F0F0" Height="29" Foreground="#FF4B4B4B" Click="button_Copy1_Click" TabIndex="3"/>
+    <Grid Background="White" Loaded="Grid_Loaded">
+        <ListBox x:Name="listBox1" Width="290" ItemsSource="{Binding Tables[0]}" ItemTemplate="{StaticResource listBoxTemplate}" Background="White" HorizontalAlignment="Left" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden" BorderBrush="#FFE3E3E3" Margin="0,130,0,0" BorderThickness="0,0,1,0"/>
+        <Label x:Name="label" Content="Agreements" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="172" Foreground="#FF444167" FontSize="29.333" />
+        <Button x:Name="button" Content="New" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="79" Background="#FF64B8DF" BorderBrush="#FF64B8DF" Height="29" Foreground="White" TabIndex="1"/>
+        <Button x:Name="button_Copy" Content="Update" HorizontalAlignment="Left" Margin="309,68,0,0" VerticalAlignment="Top" Width="46" BorderBrush="#FFF0F0F0" Height="29" Foreground="#FF4B4B4B" Background="#FFF0F0F0" TabIndex="2"/>
+        <Button x:Name="button_Copy1" Content="Save" HorizontalAlignment="Left" Margin="363,68,0,0" VerticalAlignment="Top" Width="46" Background="#FFF0F0F0" BorderBrush="#FFF0F0F0" Height="29" Foreground="#FF4B4B4B" TabIndex="3"/>
         <Button x:Name="button_Copy2" Content="" HorizontalAlignment="Left" Margin="187,19,0,0" VerticalAlignment="Top" Width="41" BorderBrush="White" Height="44" Foreground="White" RenderTransformOrigin="0.5,0.5">
             <Button.Background>
                 <ImageBrush ImageSource="Images/menu-orange.PNG" Stretch="None"/>
@@ -149,10 +147,8 @@
             </TabItem>
 
         </TabControl>
-        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="23" Margin="0,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderThickness="1" ToolTip="Enter name" TextChanged="txtSearch_TextChanged" BorderBrush="#FFE3E3E3"/>
-        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="416,68,0,0" VerticalAlignment="Top" Width="46" Background="#FFF0F0F0" BorderBrush="#FFF0F0F0" Height="29" Foreground="#FF4B4B4B" Click="button_Copy1_Click" TabIndex="4"/>
-
-
-
+        <TextBox x:Name="txtSearch" HorizontalAlignment="Left" Height="23" Margin="0,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" BorderThickness="1" ToolTip="Enter name" BorderBrush="#FFE3E3E3"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="416,68,0,0" VerticalAlignment="Top" Width="46" Background="#FFF0F0F0" BorderBrush="#FFF0F0F0" Height="29" Foreground="#FF4B4B4B" TabIndex="4"/>
     </Grid>
+
 </Page>

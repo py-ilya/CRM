@@ -112,6 +112,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PageActs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PageAgreements.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageCompanies.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -120,6 +128,12 @@
   <ItemGroup>
     <Compile Include="Page1.xaml.cs">
       <DependentUpon>Page1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageActs.xaml.cs">
+      <DependentUpon>PageActs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PageAgreements.xaml.cs">
+      <DependentUpon>PageAgreements.xaml</DependentUpon>
     </Compile>
     <Compile Include="PageCompanies.xaml.cs">
       <DependentUpon>PageCompanies.xaml</DependentUpon>

@@ -18,16 +18,16 @@ using System.Data;
 namespace CRM
 {
     /// <summary>
-    /// Логика взаимодействия для PageCompanies.xaml
+    /// Логика взаимодействия для PageActs.xaml
     /// </summary>
-    public partial class PageCompanies : Page
+    public partial class PageActs : Page
     {
         SqlConnection connection;
         string connectionString;
         SqlCommand command;
         string sql = "Select * from tbCompany";
 
-        public PageCompanies()
+        public PageActs()
         {
             InitializeComponent();
             connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\dbERP.mdf;Integrated Security=True";
@@ -59,7 +59,7 @@ namespace CRM
             listBox1.DataContext = dtset;
 
             connection.Close();
-            
+
         }
     }
 }
