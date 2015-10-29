@@ -167,6 +167,7 @@
     <None Include="dbERPDataSet.xss">
       <DependentUpon>dbERPDataSet.xsd</DependentUpon>
     </None>
+    <None Include="Act.dotx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
